@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html larg="en">
+<head>
+    <meta charset="UTF-8">
+    <title>caculation></title>
+</head>
+<body>
+    <label >Caculator</label>
+    <br>
+    <input id="a" type="text" >
+    <br>
+    <input id="b" type="text" >
+    <br>
+    <button type="button" onclick="add()">Addition(+)</button>
+    <button type="button" onclick="sub()">Subtraction(-)</button>
+    <button type="button" onclick="mul()">Multiplication(X)</button>
+    <button type="button" onclick="div()">Division(/)</button>
+ <script>
+     var kq,x,y;
+     function getInput() {
+        x = Number(document.getElementById('a').value);
+        y = Number(document.getElementById('b').value);
+     }
+
+     function add(){
+         getInput();
+         kq = x + y;
+         document.write("ket qua: "+kq)
+     }
+     function sub(){
+         getInput();
+         kq = x - y;
+         document.write("ket qua chuyen doi la "+kq)
+     }
+     function mul (){
+         getInput();
+         kq = x * y;
+         document.write("ket qua chuyen doi la "+kq)
+     }
+     function div (){
+         getInput();
+         kq = x / y;
+         document.write("ket qua chuyen doi la "+kq)
+     }
+</script> 
+</html>
