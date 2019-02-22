@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html larg="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi tien te></title>
+</head>
+<body>
+    <label >Amount</label>
+    <input id="amount" type="text" >
+    <br>
+    <label >From Currency</label>
+    <select id="from">
+        <option value="vnd">VND</option>
+        <option value="usd">USD</option>
+    </select>
+    <br>
+    <label >To Currency</label>
+    <select id="to">
+        <option value="vnd">VND</option>
+        <option value="usd">USD</option>
+    </select>
+    <br>
+    <button type="button" onclick="calculate()">Convert</button>
+
+    <script>
+    function calculate() {
+        var amount = Number(document.getElementById('amount').value);
+        var from = document.getElementById('from').value;
+        var to = document.getElementById('to').value;
+        var kq;
+        if ( from == 'vnd') {
+            if (to == 'usd')
+                kq = amount / 23000;
+            else {
+                kq = amount;
+            }
+        } else {
+            if ( to = 'vnd')
+                kq = amount * 23000;
+            else {
+                kq = amount;
+            }   
+        }   
+        document.write("ket qua chuyen doi la "+kq)
+    }
+    </script>
+</html>
