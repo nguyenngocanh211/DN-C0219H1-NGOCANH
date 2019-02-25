@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html larg="en">
+<head>
+    <meta charset="UTF-8">
+    <title>số ngày trong tháng></title>
+</head>
+<body>
+    <input id="firstMonth" type="text" >
+    <button type="button" onclick="show1();">Tính số ngày</button>
+</br>
+    <script>
+    function show1() {
+        var a = document.getElementById('firstMonth').value;
+        switch (a) {
+            case '1':
+            case '3':
+            case '5':
+            case '7':
+            case '8':
+            case '10':
+            case '12':
+            document.write("thang" +  a + " có 31 ngay");
+            //alert("31 ngày");
+            break;
+            case '2':
+            document.write("thang" +  a + " có 28 hoac 29 ngay");
+            break;
+            case '4':
+            case '6':
+            case '9':
+            case '11':
+            document.write("thang" +  a + " có 30 ngay");
+            break;
+        }
+    }
+       
+    </script>
+</html>
