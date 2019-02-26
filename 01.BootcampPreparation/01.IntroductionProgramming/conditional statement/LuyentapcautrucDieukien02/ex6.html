@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html larg="en">
+<head>
+    <meta charset="UTF-8">
+    <title><title></title>
+</head>
+<label >Nhap he so a (ax + b = 0) </label>
+<input type="text" id="a">
+</br>
+<label >Nhap he so b (ax + b = 0)</label>
+<input type="text" id="b">
+<input type="button" value="giai" onClick="pt()">
+    <script>
+ function pt(){
+var x;
+var a = Number(document.getElementById("a"));
+var b = Number(document.getElementById("b"));
+if (a===0) {
+    if (b ===0) {
+    document.write("Phuong trinh co vo so nghiem");
+    } else {
+    document.write("Phuong trinh vo nghiem");
+    } 
+    }  else if (b !== 0) {
+    x = -b/a;
+    document.write("Phuong trinh co nghiem " + x);
+    }  
+}
+    </script>
+
+</html>
