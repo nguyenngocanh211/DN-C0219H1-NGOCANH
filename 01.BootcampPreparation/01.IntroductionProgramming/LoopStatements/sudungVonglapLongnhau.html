@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>JavaScript Loops</h2>
+    <script language="javascript">
+let sout, i, j;
+sout = "<table border='1' width='300' cellspacing='1' cellpadding='4'>";
+i = 1,j = 2;
+while (i < 10) {
+    sout = sout + "<tr>";
+    while (j <= 9) {
+        sout = sout + "<td>" + i * j + "</td>";
+        j++;
+    }
+    sout = sout + "</tr>";
+    j = 2;
+    i++;
+}
+sout = sout + "</table>";
+document.write(sout);
+</script>
+</body>
+</html>
