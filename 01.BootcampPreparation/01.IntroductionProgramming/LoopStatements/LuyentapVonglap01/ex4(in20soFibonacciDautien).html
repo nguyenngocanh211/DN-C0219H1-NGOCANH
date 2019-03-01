@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="demo"></p>
+    <script language="javascript">
+    var numbers = Number(prompt('so luong so fibonacci can in ra:'));
+    var result = "";
+
+    var count = 0;
+    var n = 0;
+    while (count < numbers) {
+        if (soFibonacci(n)) {
+            result += (n + " ");
+            count++;
+        }
+        n++;
+    }
+    function soFibonacci(n) {
+        var a = 1, b=0, tempt
+        while (n < numbers) {
+            tempt = a;
+            a = a + b;
+            b = tempt;
+            n++
+        }
+        return b;
+    }
+    document.write(result);
+      
+</script>
+</body>
+</html>

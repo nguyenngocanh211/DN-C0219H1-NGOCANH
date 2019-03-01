@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>>
+<script>
+    function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+            result = "Excellent. We'll play a nice game of chess.";
+        } else {
+            result = "Maybe later then.";
+        }
+        return result;
+    }
+    let confirmAnswer = confirm("Shall we play a game?");
+    let yourAnswer = processConfirm(confirmAnswer);
+    alert(yourAnswer);
+</script>
+
+</html>

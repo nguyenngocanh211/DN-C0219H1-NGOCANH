@@ -13,15 +13,15 @@
     <script>
  function pt(){
 var x;
-var a = Number(document.getElementById("a"));
-var b = Number(document.getElementById("b"));
+var a = Number(document.getElementById("a").value);
+var b = Number(document.getElementById("b").value);
 if (a===0) {
     if (b ===0) {
     document.write("Phuong trinh co vo so nghiem");
     } else {
     document.write("Phuong trinh vo nghiem");
     } 
-    }  else if (b !== 0) {
+}  else {
     x = -b/a;
     document.write("Phuong trinh co nghiem " + x);
     }  

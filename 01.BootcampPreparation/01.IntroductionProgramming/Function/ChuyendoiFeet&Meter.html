@@ -1,0 +1,32 @@
+<html>
+    <body>
+    <input id="number" type ="number" >
+    <br>
+    <select id="unit">
+        <option value="feet">Feet</option>
+        <option value="meter">Meter</option>
+    </select>
+    <button type= "button" onclick="convert()">Convert</button>
+        <script>
+    
+    function convert() {
+        var number = Number(document.getElementById('number').value);
+        var unit = document.getElementById("unit").value;
+        console.log(unit);
+        var result;
+        if (unit == 'feet') {
+            result = 0.305 * number;
+            document.write("Ket qua la " + result + " meter");
+    
+        } else {
+            result = 3.279 * number;
+            document.write("Ket qua la " + result + " feet");
+        }
+      
+    }
+    
+
+   
+        </script>
+    </body>
+</html>
