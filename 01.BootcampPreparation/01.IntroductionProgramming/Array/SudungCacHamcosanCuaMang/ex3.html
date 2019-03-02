@@ -1,0 +1,23 @@
+<script>
+    var str = 'The Quick Brown Box';
+    var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+var result = [];
+for(let i=0; x<str.length; x++)
+  {
+    if(UPPER.includes(str[x]))
+    {
+      result.push(str[x].toLowerCase());
+    }
+    else if(LOWER.includes(str[x]))
+    {
+      result.push(str[x].toUpperCase());
+    }
+    else 
+    {
+      result.push(str[x]);
+    }
+  }
+document.write(result.join(''));
+
+</script>

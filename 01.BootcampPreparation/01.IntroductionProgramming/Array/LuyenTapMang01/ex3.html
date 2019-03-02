@@ -1,0 +1,19 @@
+<script>
+    //Viết chương trình khởi tạo mảng số nguyên. 
+    //Hiển hiện giá trị lớn nhất trong mảng đó. 
+    //In ra giá trị trung bình của các phần tử trong mảng.
+    var numbers = prompt('nhap day so nguyen:');
+    var arr = numbers.toString();
+    var max = arr[0];
+    var index = 0;
+    var sum = Number(arr[0]);
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] > arr[0]) {
+            max = arr[i];
+            index = i;
+        } sum += Number(arr[i]);
+    } 
+    average = sum/ arr.length;
+    alert('so nguyen lon nhat trong day la: '+ max + ' tai vi tri ' + index);
+    alert ('gia tri trung binh cac phan tu trong mang: ' +average  );
+</script>

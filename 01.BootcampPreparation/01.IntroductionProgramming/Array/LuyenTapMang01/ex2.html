@@ -1,0 +1,17 @@
+<html>
+<script>
+    //Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau. 
+    //Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.
+    var arr = [10, 20, 30, 40, 44, 45, 46, 47, 48, -49];
+    var max = arr[0];
+    var index = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] > arr[0]) {
+            max = arr[i];
+            index = i;
+
+        }
+    }
+    alert('so nguyen lon nhat trong day la: '+ max + ' tai vi tri ' + index);
+</script>
+</htm>

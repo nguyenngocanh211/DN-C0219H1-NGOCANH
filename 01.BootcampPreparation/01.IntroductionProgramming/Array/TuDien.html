@@ -1,0 +1,14 @@
+<script>
+    var x = prompt('enter a word');
+    var eng = ['hello', 'goodbye', 'one', 'two', 'three'];
+    var vie = ['xin chào', 'tạm biệt', 'số 1', 'số 2', 'số 3'];
+    var str = x.toString();
+    for (var i = 0; i < eng.length; i++) {
+        if (eng[i] == str) {
+            alert('this means ' + vie[i] + ' in Vietnamese');
+            break;
+        } else {
+            alert('there is no available word');
+        }
+    }
+</script>
