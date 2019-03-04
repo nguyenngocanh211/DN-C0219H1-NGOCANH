@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Factorial</title>
+
+</head>
+
+<body>
+    <input id="x" type="number">
+    <button type="button" onclick="factorial()">Giai Thua</button>
+
+</body>
+<script>
+    function factorial() {
+        var a = document.getElementById("x").value;
+        var result = a;
+        if (a == 0 || a == 1) {
+            alert(result);
+        } else {
+        while (a > 1) {
+            a--;
+            result *= a; 
+        }
+        alert("factorial: " + result);
+    }
+    } 
+</script>

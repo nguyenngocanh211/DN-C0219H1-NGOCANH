@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>so sanh so</title>
+</head>
+
+<body>
+    <input id="a" type="number">
+    <input id="b" type="number">
+    <button type ="button" onclick="compare()">Compare</button>
+</body>
+<script>
+   function compare() {
+       var a1=document.getElementById("a").value;
+       var b1=document.getElementById("b").value;
+    if (a1 > b1) {
+        alert ('so '+ a1 +" lon hon so"  + b1 );
+    } else {
+        alert ('so '+ b1 +" lon hon so " + a1);
+    }
+   }
+</script>

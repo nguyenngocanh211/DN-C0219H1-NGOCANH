@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>tính diện tích, hàm tính chu vi hình tròn</title>
+
+</head>
+
+<body>
+    <input id="r" type="number">
+    <button type="button" onclick="chuvi()">Chu vi</button>
+    <button type="button" onclick="dientich()">Dien tich</button>
+
+</body>
+<script>
+    function chuvi() {
+        var x = document.getElementById("r").value;
+        var c = x*2*Math.PI;
+        alert("chu vi hinh tron la: " + c);
+    }
+    function dientich() {
+        var x = document.getElementById("r").value;
+        var s = x*x*Math.PI;
+        alert("dien tich hinh tron la: " + s);
+    }
+</script>

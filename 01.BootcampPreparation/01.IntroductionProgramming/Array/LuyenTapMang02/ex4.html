@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Khai báo và đếm số kí tự của Mảng</title>
+</head>
+
+<body>
+</body>
+<script>
+    //Viết một chương trình để đếm số từ trong một chuỗi
+    var arr = prompt("enter an array: ");
+    var count = 0
+    var size = arr.length;
+    var inWord = false;
+
+    for (let i = 0; i < size; i++) {
+        if ((arr[i] != " ") && (inWord == false)) {
+            count++;
+            inWord = true; 
+        }
+        if (arr[i] == " ") {
+            inWord = false;
+        }
+    }
+    document.write(count);
+</script>
