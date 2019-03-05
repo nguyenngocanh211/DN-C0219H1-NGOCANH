@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Is Array</title>
+
+</head>
+
+<body>
+
+</body>
+<script>
+    //Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ,
+    // kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+    //nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1
+    //var a = prompt('enter an array: ');
+    //var x = prompt('enter a letter:');
+    // var arr = a.toString();
+    var x = 2;
+    var arr = [2, 3, 4, 5, 10];
+    inArray(x, arr);
+    function inArray(x, arr) {
+        var count = arr.indexOf(x);
+        count!=0 ? document.write('ki tu ' + x + ' xuat hien ' + count + ' lan') : alert ("-1");
+    }
+</script>
+
+</html>
