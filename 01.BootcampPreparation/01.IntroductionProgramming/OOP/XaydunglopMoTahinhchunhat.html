@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Xay dung lop mo ta hinh chu nhat</title>
+
+</head>
+
+<body>
+    <canvas id="myCanvas" width="800px" height="700px" ;></canvas>>
+
+</body>
+<script>
+    let Retangle = function (hight, width) {
+        this.hight = hight;
+        this.width = width;
+        this.getArea = function () {
+            let area = hight * width;
+            console.log(area);
+        }
+        this.getPerimeter = function () {
+            var perimeter = (hight + width) * 2;
+            console.log(perimeter);
+        }
+        this.createRetangle = function () {
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "yellow";
+            ctx.fillRect(20, 20, this.width, this.height);
+            ctx.fill();
+        }
+    }
+    let rec = new Retangle(300, 200);
+    rec.getArea();
+    rec.getPerimeter();
+    rec.createRetangle();
+
+
+</script>
