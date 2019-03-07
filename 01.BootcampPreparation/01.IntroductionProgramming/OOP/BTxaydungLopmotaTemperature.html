@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Xây dựng lớp mô tả Temperature</title>
+
+</head>
+
+<body>
+</body>
+<script>
+    
+    var Temperature = function () {
+        let tempC = prompt('nhap nhiet do (do C): ');
+        if (tempC > -273) {
+        this.temp = tempC;
+        
+        this.changeToK = function (temp) {
+            this.tempK = tempC + 273, 15;
+            document.write(tempC + " do C tuong ung " + this.tempK + " do K <br>");
+        }
+        this.changetoF = function (temp) {
+            this.tempF = (tempC * 9 / 5) + 32;
+            document.write(tempC + " do C tuong ung " + this.tempF + " do F");
+        }
+        } else {
+            alert('khong the chuyen doi');
+        }
+    }
+    var temp1 = new Temperature();
+    temp1.changeToK();
+    temp1.changetoF();
+</script>

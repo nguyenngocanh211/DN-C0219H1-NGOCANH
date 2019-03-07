@@ -9,18 +9,17 @@
 
 <body>
     <canvas id="myCanvas" width="800px" height="700px" ;></canvas>>
-
 </body>
 <script>
-    let Retangle = function (hight, width) {
-        this.hight = hight;
+    let Retangle = function (height, width) {
+        this.height = height;
         this.width = width;
         this.getArea = function () {
-            let area = hight * width;
+            let area = height * width;
             console.log(area);
         }
         this.getPerimeter = function () {
-            var perimeter = (hight + width) * 2;
+            var perimeter = (height + width) * 2;
             console.log(perimeter);
         }
         this.createRetangle = function () {
@@ -28,13 +27,11 @@
             var ctx = canvas.getContext("2d");
             ctx.fillStyle = "yellow";
             ctx.fillRect(20, 20, this.width, this.height);
-            ctx.fill();
+        //clearRect
         }
     }
     let rec = new Retangle(300, 200);
     rec.getArea();
     rec.getPerimeter();
     rec.createRetangle();
-
-
 </script>
