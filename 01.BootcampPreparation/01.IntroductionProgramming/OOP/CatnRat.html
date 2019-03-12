@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Mèo bắt chuột và ăn chuột.</title>
+
+</head>
+
+<body>
+</body>
+<script>
+function Rat(name, weight, speed, live) {
+    this.name = name;
+    this.weight = weight;
+    this.speed = speed;
+    this.live = true;
+    this.makeSound = function() {
+        document.write(this.name+ ": chit chit <br>");
+    }
+}    
+function Cat(name, weight, maxSpeed) {
+    this.name = name;
+    this.weight = weight;
+    this.maxSpeed = maxSpeed;
+    this.makeSound = function() {
+        document.write(this.name + ": meow meow <br>");
+    }
+    this.catchRat = function(rat) {
+        if (rat.speed < this.maxSpeed) {
+            document.write(this.name + ' caught the rat <br>');
+        }
+    }
+    this.eatRat = function(rat) {
+        if (rat.live) {
+            document.write(this.name + ' caught the rat and has new weight: '+ (this.weight += rat.weight));
+        }
+    }
+}
+var rat1 = new Rat('Jerry', 5, 10, true);
+var cat1 = new Cat('Tom',15,20);
+rat1.makeSound();
+cat1.makeSound();
+cat1.catchRat(rat1);
+cat1.eatRat(rat1);
+
+</script>

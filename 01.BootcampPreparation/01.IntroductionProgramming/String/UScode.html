@@ -10,15 +10,14 @@
 <body>
 </body>
 <script>
-    function isUscode(str) {
-        RegExp = /^[A-Z]/;
+    function is_usZipCode(str) {
+        RegExp = /^[0-9]{5}(?:-[0-9]{4})?$/;
         if (RegExp.test(str)) {
-            console.log("String's first character is uppercase");
+            console.log("US code");
         } else {
-            console.log("String's first character is not uppercase");
+            console.log("Not US code");
         }
     }
- var str1 = new isFirstLetterUpperCase('ABFFASDFASDF');
- var str2 = new isFirstLetterUpperCase('abcidkenda');
- 
+ var str1 = is_usZipCode("5513-29-425");
+ var str2 = is_usZipCode('03201 - 2150');
 </script>
