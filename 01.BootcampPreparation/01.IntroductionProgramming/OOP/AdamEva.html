@@ -20,13 +20,16 @@
                 return false
             } return true;
         }
-    }
+        this.decrease = function(){
+            this.weight= this.weight-1;
+        }
+        }
     function Human(name, gender, weight) {
         this.name = name;
         this.gender = true;
         this.weight = weight;
         this.say = function () {
-            console.log("i can speak");
+            console.log(this.name + " say: i can speak");
         }
         this.isMale = function () {
             if (this.gender == 'male') {
@@ -49,14 +52,18 @@
                 console.log( this.name +  'eating');
             }
         }
-
     }
     var apple1 = new Apple(10);
     var adam = new Human('Adam', 'male',70);
     var eva = new Human('Eva', 'female',50);
-    adam.checkAppleWeight(apple1);
+    if((apple1.getWeight(apple1))%2==0) {
     adam.eatApple(apple1);
-    eva.eatApple(apple1);
+    } else {
+        eva.eatApple(apple1);
+    }
+    adam.checkAppleWeight(apple1);
+    adam.say();
+
 
 
 </script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Validate account</title>
+
+</head>
+
+<body>
+</body>
+<script>
+    function isAmount(str) {
+        RegExp = /^[_a-z0-9]{6,}$/
+        if (RegExp.test(str)) {
+            console.log('is an amount')
+        } else {
+            console.log('not an  amount')
+        }
+    }
+    var a1 = isAmount('_123adv');
+    var a2 = isAmount('123');
+</script>

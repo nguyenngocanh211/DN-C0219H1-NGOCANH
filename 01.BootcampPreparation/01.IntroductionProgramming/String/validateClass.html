@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Validate tên của lớp học</title>
+
+</head>
+
+<body>
+</body>
+<script>
+    function isClass(str) {
+        RegExp = /^[C|A|P][0-9]{4,}[G|H|I|K|L|M]$/
+        if (RegExp.test(str)) {
+            console.log('is a class')
+        } else {
+            console.log('not a class')
+        }
+    }
+    var a1 = isClass('C0318G');
+    var a2 = isClass('P0323A');
+</script>
