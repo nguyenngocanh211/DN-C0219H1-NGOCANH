@@ -20,10 +20,10 @@
                 return false
             } return true;
         }
-        this.decrease = function(){
-            this.weight= this.weight-1;
+        this.decrease = function () {
+            this.weight = this.weight - 1;
         }
-        }
+    }
     function Human(name, gender, weight) {
         this.name = name;
         this.gender = true;
@@ -42,25 +42,21 @@
         this.getWeight = function () {
             return this.getWeight;
         }
-        this.checkAppleWeight = function(apple) {
-            console.log("appleWeight: " + apple.weight); 
+        this.checkAppleWeight = function (apple) {
+            console.log("appleWeight: " + apple.weight);
         }
         this.eatApple = function (Apple) {
-            while(Apple.weight > 0 ) {
+            while (Apple.weight > 0) {
                 this.weight++;
                 Apple.weight--;
-                console.log( this.name +  'eating');
+                console.log(this.name + 'eating');
             }
         }
     }
     var apple1 = new Apple(10);
-    var adam = new Human('Adam', 'male',70);
-    var eva = new Human('Eva', 'female',50);
-    if((apple1.getWeight(apple1))%2==0) {
-    adam.eatApple(apple1);
-    } else {
-        eva.eatApple(apple1);
-    }
+    var adam = new Human('Adam', 'male', 70);
+    var eva = new Human('Eva', 'female', 50);
+
     adam.checkAppleWeight(apple1);
     adam.say();
 

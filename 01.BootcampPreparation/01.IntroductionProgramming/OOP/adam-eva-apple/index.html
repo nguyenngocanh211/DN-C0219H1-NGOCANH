@@ -1,0 +1,19 @@
+<script src="apple.js"></script>
+<script src="human.js"></script>
+<script>
+    const MALE = true;
+    const FEMALE = false;
+
+    let eva = new Human("Eva", FEMALE, 45);
+    let adam = new Human("Adam", MALE, 60);
+    let apple = new Apple();
+
+    while(!apple.isEmpty()) {
+        eva.eat(apple);
+        adam.eat(apple);
+    }
+
+    eva.say("Apple is " + (apple.isEmpty()?"empty" : "not empty"));
+    eva.say("Eva's weight is " + eva.getWeight());
+    eva.say("Adam's weight is " + adam.getWeight());
+</script>
