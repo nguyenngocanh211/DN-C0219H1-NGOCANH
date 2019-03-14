@@ -1,3 +1,4 @@
+//source code: codegym
 var app = new function() {
     this.el = document.getElementById('products');
     this.products = ['Sony Xperia', 'Samsung Galaxy', 'Nokia 6', 'Xiaomi Redmi Note 4', 'Apple iPhone 6S', 'Xiaomi Mi 5s Plus', 'Apple iPhone 8 Plus', 'Fujitsu F-04E', 'Oppo A71'];
@@ -34,7 +35,7 @@ var app = new function() {
         el = document.getElementById('add-name');
         var product = el.value;
         if (product) {
-            this.products.push(product.trim());
+            this.products.push(product.trim());//trim()xóa khoảng cách đầu và cuối chuỗi
             el.value = '';
             this.fetchAll();
         }

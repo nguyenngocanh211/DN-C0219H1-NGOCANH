@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Sử dụng thuật toán tìm kiếm</title>
+
+
+</head>
+
+<body>
+</body>
+<script>
+    function isViettel(str) {
+        RegExp = /^[0][3][2|3|4|5|6|7|8|9][0-9]{7}$/;
+        if (RegExp.test(str)) {
+            console.log("Viettel number");
+        } else {
+            console.log("Not Viettel number");
+        }
+    }
+    var numbers = ["0345327766", "0123456789", "0351234567"];
+    for (var i = 0; i < numbers.length; i++) {
+        var result = isViettel(numbers[i]);
+    }
+
+
+
+</script>
