@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Bai 2 </title>
+
+</head>
+
+<body>
+</body>
+<script>
+    var array = [1, 2, 3, 5, 8, 7, 6, 9, 2];
+    var a = prompt('nhap vao mot so nguyen');
+    function tryRemoveNumberFromArray(num, arr) {
+        for (i = 0; i < arr.length; i++) {
+            var newArr = [];
+            if (num == arr[0]) {
+                newArr = arr.splice(0, 1);
+                console.log("mang moi: " + newArr);
+            } else {
+                console.log("mang ban dau" + arr);
+                break;
+            }
+        }
+    }
+    tryRemoveNumberFromArray(a, array);
+
+</script>
